@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	$(function(){
+		$("*").css("border","1px solid red");
+	});
+	
+	$(function(){
+		$("#tit1").css("background-color","olive")
+		.css("border","2px solid green");
+	});
+	
+	$(function(){
+		$("#tit2").css("background-color","#00f")
+		.css("border","2px dashed blue")
+	});
+	
+	$(function(){
+		$("#tit3,h1").css("background-color","#0ff")	//그룹선택
+		.css("border","2px dashed blue")
+	});
+	
+	$(function(){
+		$("#tit4,h1").css("background-color","#bff")	//클래스선택
+		.css("border","2px dashed blue")
+	});
+	</script>
+	
+</head>
+<body>
+	<h1>제이쿼리</h1>
+	<h2 id="tit1">선택자</h2>
+	<h3 id="tit2">선택자</h3>
+	<h4 id="tit3">선택자</h4>
+	<h5 class="tit4">선택자</h5>
+</body>
+</html>
