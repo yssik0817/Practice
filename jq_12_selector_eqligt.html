@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,4 +31,38 @@
 	</ul>
 
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>eq, lt, gt(index)탐색 선택자</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	
+	$(function(){
+		$("#menu li").eq(2)		//eq 선택한 인덱스2만 선택 index2
+		.css({"background-color":"red"});
+		
+		$("#menu li:lt(2)")		//lt2보다 작은 인덱스 선택 index0,1
+		.css({"background-color":"blue"});
+		
+		$("#menu li:gt(2)")		//gt2보다 큰 인덱스만 선택 index3,4
+		.css({"background-color":"green"});
+	});
+	</script>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu">
+		<li>내용1</li>	
+		<li>내용2</li>	
+		<li>내용3</li>	
+		<li>내용4</li>	
+	
+	</ul>
+
+</body>
+>>>>>>> 694b9e2aec6a74010d567bbc2e8e60497a409d47
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,4 +30,37 @@
 		
 	</div>	
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>형제 요소 선택자</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	
+	$(function(){
+		var style_1={
+			"background-color":"#00f",
+			"border":"2px solid #f00"
+		}
+
+		$(".txt").siblings()	//h1, 내용1,3,4, 선택
+		.css(style_1);
+	});
+	
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<h1>인접 관계 선택자</h1>
+		<p>내용1</p>
+		<p class="txt">내용2</p>
+		<p>내용3</p>
+		<p>내용4</p>
+		
+	</div>	
+</body>
+>>>>>>> 694b9e2aec6a74010d567bbc2e8e60497a409d47
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,4 +28,35 @@
 		</div>
 	</div>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가장 가까운 상위 요소 선택자</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	
+	$(function(){
+		$(".txt1").closest("div").css({
+			"border":"2px dashed red"
+		});
+	});
+	
+	$(".tit").css({
+		"border":"2px dashed blue"
+	});
+});
+	</script>
+</head>
+<body>
+	<h1 class="title">선택자</h1>
+	<div id="tit">
+		<div>
+			<p class="txt1">내용</p>
+		</div>
+	</div>
+</body>
+>>>>>>> 694b9e2aec6a74010d567bbc2e8e60497a409d47
 </html>
