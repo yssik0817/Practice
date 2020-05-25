@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>nth-child</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	
+	$(function(){
+		$("#menu1 li:nth-child(1)")			//지정한 숫자에 위치한 요소
+		.css({"background-color":"#ff0"});
+		
+		$("#menu1 li:nth-child(2n)")		//2배수
+		.css({"border":"2px dashed #f00"});
+		
+		$("#menu2 li:nth-last-child(2)")	//마지막에서 두 번째
+		.css({"background-color":"olive"});
+	});
+	</script>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu1">
+		<li>내용1-1</li>
+		<li>내용1-2</li>
+		<li>내용1-3</li>
+		<li>내용1-4</li>
+	</ul>
+	
+	<ul id="menu2">
+		<li>내용2-1</li>
+		<li>내용2-2</li>
+		<li>내용2-3</li>
+		<li>내용2-4</li>
+	</ul>
+	
+</body>
+</html>

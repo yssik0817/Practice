@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>짝수, 홀수 요소 선택자</title>
+<script src="/book/js/jquery.js"></script>
+
+	<script>
+	
+	$(function(){
+		$("#menu li:even")		//내용1,3 왜냐하면 index0,2
+		.css({"background-color":"red"});
+		
+		$("#menu li:odd")		//내용2,4 왜냐하면 index1,3
+		.css({"background-color":"blue"});
+	});
+	</script>
+</head>
+<body>
+	<h1>탐색 선택자</h1>
+	<ul id="menu">
+		<li>내용1</li>	
+		<li>내용2</li>	
+		<li>내용3</li>	
+		<li>내용4</li>	
+	
+	</ul>
+
+</body>
+</html>
